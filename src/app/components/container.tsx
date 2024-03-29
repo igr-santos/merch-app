@@ -19,11 +19,10 @@ export interface DragItem {
 }
 
 const styles: CSSProperties = {
-  width: 1200,
-  minHeight: '100vh',
-  border: '5px dotted purple',
+  minWidth: '100vw',
+  // border: '5px dotted purple',
   position: 'relative',
-  backgroundColor: 'rgba(0,0,0,.4)'
+  // backgroundColor: 'rgba(0,0,0,.4)'
 }
 
 export interface ContainerProps {
@@ -44,12 +43,12 @@ export const Container: FC<ContainerProps> = ({ hideSourceOnDrag }) => {
       h: number
     }
   }>({
-    a: { top: 20, left: 80, src: '/imgs/linguini-drops/tronco-bermuda-bege.png', w: 755, h: 822 },
-    b: { top: 180, left: 20, src: '/imgs/linguini-drops/tronco-calca-marron.png', w: 728, h: 779 },
-    c: { top: 180, left: 20, src: '/imgs/linguini-drops/tronco-calca-preta.png', w: 1081, h: 788 },
-    d: { top: 20, left: 80, src: '/imgs/linguini-drops/bermuda-bege.png', w: 828, h: 662 },
-    e: { top: 180, left: 20, src: '/imgs/linguini-drops/calca-marron.png', w: 919, h: 714 },
-    f: { top: 180, left: 20, src: '/imgs/linguini-drops/calca-preta.png', w: 682, h: 774 },
+    a: { top: 264, left: 917, src: '/imgs/linguini-drops/tronco-bermuda-bege.png', w: 755, h: 822 },
+    b: { top: 247, left: 256, src: '/imgs/linguini-drops/tronco-calca-marron.png', w: 728, h: 779 },
+    c: { top: 176, left: 521, src: '/imgs/linguini-drops/tronco-calca-preta.png', w: 1081, h: 788 },
+    d: { top: 461, left: 892, src: '/imgs/linguini-drops/bermuda-bege.png', w: 828, h: 662 },
+    e: { top: 426, left: 224, src: '/imgs/linguini-drops/calca-marron.png', w: 919, h: 714 },
+    f: { top: 353, left: 566, src: '/imgs/linguini-drops/calca-preta.png', w: 682, h: 774 },
   })
 
   const moveBox = useCallback(
